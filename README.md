@@ -35,7 +35,7 @@ Ou
 Vous pouvez lancer votre bot en un double click via le .bat qui fait exactement la meme opération.
 ```
 
-### Héberger le bot 24/7 | Gratuit
+### Héberger le bot 24/7 | Gratuit (PC et Mobile)
 ```
 Rendez-vous sur https://render.com/ et créer vour un compte
 Créer un Web Service

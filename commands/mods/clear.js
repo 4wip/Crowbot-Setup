@@ -9,7 +9,7 @@ const {
 
 function unban(message, user, authorcooldown) {
 	message.guild.members.unban(user.id, {
-		reason: `Debannis par ${message.author.tag}`
+		reason: `Débannis par ${message.author.tag}`
 	}).then(r => {
 		authorcooldown.limit++
 		setTimeout(() => {

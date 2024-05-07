@@ -38,7 +38,7 @@ module.exports = {
 				message.channel.send(`Je suis entrain d'enlevé le rôle \`${role}\` à ${message.guild.memberCount} utilisateur...`)
 				message.guild.members.cache.forEach(member => setInterval(() => {
 					count++
-					if (member) member.roles.remove(role, `Masiverole par ${message.author.tag}`).catch()
+					if (member) member.roles.remove(role, `Massiverole par ${message.author.tag}`).catch()
 					if (count === message.guild.memberCount) return message.channel.send(`J'effectue la tâche, Merci de patienter ${message.guild.memberCount > 1 ? `J'enleve le rôle à ${message.guild.memberCount} membres` : `J'enleve le rôle à membres ${message.guild.memberCount} membre`}`);
 				}), 250);
 

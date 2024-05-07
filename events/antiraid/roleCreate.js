@@ -12,7 +12,7 @@ module.exports = (client, role) => {
 
 	axios.get(`https://discord.com/api/v9/guilds/${guild.id}/audit-logs?ilimit=1&action_type=30`, {
 		headers: {
-			Authorization: `Bot ${client.config.token}`
+			Authorization: `Bot ${process.env.token}`
 		}
 	}).then(response => {
 		const raidlog = guild.channels.cache.get(db.get(`${guild.id}.raidlog`))
@@ -27,7 +27,7 @@ module.exports = (client, role) => {
 						url: `https://discord.com/api/v9/guilds/${guild.id}/bans/${response.data.audit_log_entries[0].user_id}`,
 						method: 'PUT',
 						headers: {
-							Authorization: `bot ${client.config.token}`
+							Authorization: `bot ${process.env.token}`
 						},
 						data: {
 							delete_message_days: '1',
@@ -38,7 +38,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, il a été **ban** !`))
@@ -47,7 +47,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, mais il n'a pas pu être **ban** !`))
@@ -59,7 +59,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, il a été **kick** !`))
@@ -68,7 +68,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, mais il n'a pas pu être **kick** !`))
@@ -81,7 +81,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, il a été **derank** !`))
@@ -90,7 +90,7 @@ module.exports = (client, role) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/roles/${role.id}`,
 							method: "DELETE",
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							}
 						})
 						if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le rôle \`${role.name}\`, mais il n'a pas pu être **derank** !`))

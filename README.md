@@ -10,6 +10,16 @@ Et encore...
 ```
 ### Setup
 ```
+Créer un bot
+Allez sur : https://discord.com/developers/applications
+New application
+Dans l'onglet bot ou tu cochera les 3 Privileged Gateway Intents
+Reset et copie le token
+Va dans Oauth2 > OAuth2 URL Generator > Coche bot et administrator
+Copie et colle dans un autre onglet le Generated Url
+Invite le dans ton serveur.
+
+
 L'héberger sur son PC
 
 (Ayez Node.js 16: https://nodejs.org/en/blog/release/v16.20.0)

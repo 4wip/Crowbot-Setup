@@ -26,7 +26,7 @@ module.exports = {
 				if (!emoji) return message.channel.send('');
 
 				let customemoji = Discord.Util.parseEmoji(emoji);
-				if (!customemoji.id) return message.channel.send(`Je n'est pas accès à cette emoji`);
+				if (!customemoji.id) return message.channel.send(`Je n'est pas accès à cette emoji.`);
 
 				if (customemoji.id) {
 					const Link = `https://cdn.Discordapp.com/emojis/${customemoji.id}.${
@@ -57,7 +57,7 @@ module.exports = {
 			if (args[0] === "remove") {
 
 				let emoji = Discord.Util.parseEmoji(args[1]) || message.guild.emojis.cache.find(r => r.name === args[1]) || message.guild.emojis.cache.get(args[1])
-				if (!message.guild.emojis.cache.get(emoji.id)) return message.channel.send(`Cette emoji n'est pas sur ce serveur`);
+				if (!message.guild.emojis.cache.get(emoji.id)) return message.channel.send(`Cette emoji n'est pas sur ce serveur.`);
 				emoji = message.guild.emojis.cache.get(emoji.id)
 				emoji.delete().then(() => {
 					message.channel.send(`1 emoji supprimé`)

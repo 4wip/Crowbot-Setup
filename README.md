@@ -23,7 +23,7 @@ Invite le dans ton serveur.
 L'héberger sur son PC
 
 (Ayez Node.js 16: https://nodejs.org/en/blog/release/v16.20.0)
-Dans télécharge Crowbot-Fix.zip: (https://github.com/4wip/Crowbot-Fix/archive/refs/heads/main.zip)
+Dans télécharge Crowbot-Fix.zip qui est dans les releases (https://github.com/4wip/Crowbot-Fix/releases/)
 Extraire le dossier dans votre pc
 Pour le token fait un fichier sans nom .env puis écriver dedans: token = "Letokendetonbot"
 

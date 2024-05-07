@@ -60,8 +60,7 @@ Puis t'arrivera dans le dashboard ou t'ira dans l'onglet Cronjobs
 Ensuite Créer un Cronjobs : Titre: Ce que tu veux | Url celle de ton render (Voir l'image) | Calendrier d'éxecution | Chaque 1 minutes.
 Créer et c'est bon ton bot fonctionne maintenant 24/7
 ```
-
-![image](https://github.com/4wip/Crowbot/assets/168364544/a97f7eec-a512-404e-a0ea-01f137ddfead)
+![image](https://github.com/4wip/Crowbot-Fix/assets/168364544/9c70adb6-34f7-44fe-97ad-78b46c2795bf)
 
 ```
 Si vous avez une question : https://discord.gg/htNuh5pZ

@@ -159,7 +159,7 @@ module.exports = {
 						.setStyle("gray")
 						.setID("gvw2" + message.id)
 						.setEmoji("❌")
-						.setLabel("Re formuler votre choix")
+						.setLabel("Reformuler votre choix")
 					msg.edit({
 						embed: embed,
 						components: [
@@ -272,7 +272,7 @@ module.exports = {
 					.setStyle("gray")
 					.setID("gvw2" + message.id)
 					.setEmoji("❌")
-					.setLabel("Re formuler votre choix")
+					.setLabel("Reformuler votre choix")
 				message.channel.send({
 					embed: embed,
 					components: [

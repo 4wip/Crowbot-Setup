@@ -25,7 +25,7 @@ module.exports = {
 							SPEAK: false,
 							ADD_REACTIONS: false
 						})
-					}, `Tout les salon fermé par ${message.author.tag}`);
+					}, `Tous les salons fermés par ${message.author.tag}`);
 
 
 

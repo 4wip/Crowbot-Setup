@@ -14,7 +14,7 @@ module.exports = (client, channel) => {
 	try { // -- Audit Logs
 		axios.get(`https://discord.com/api/v9/guilds/${guild.id}/audit-logs?ilimit=1&action_type=10`, {
 			headers: {
-				Authorization: `Bot ${client.config.token}`
+				Authorization: `Bot ${process.env.token}`
 			}
 		}).then(response => {
 			if (response.data && response.data.audit_log_entries[0].user_id) {
@@ -28,7 +28,7 @@ module.exports = (client, channel) => {
 							url: `https://discord.com/api/v9/guilds/${guild.id}/bans/${response.data.audit_log_entries[0].user_id}`,
 							method: 'PUT',
 							headers: {
-								Authorization: `Bot ${client.config.token}`
+								Authorization: `Bot ${process.env.token}`
 							},
 							data: {
 								delete_message_days: '1',
@@ -39,7 +39,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, il a été **ban** !`))
@@ -48,7 +48,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, mais il n'a pas pu être **ban** !`))
@@ -61,7 +61,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, il a été **kick** !`))
@@ -70,7 +70,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, mais il n'a pas pu être **kick** !`))
@@ -83,7 +83,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, il a été **derank** !`))
@@ -92,7 +92,7 @@ module.exports = (client, channel) => {
 								url: `https://discord.com/api/v9/channels/${channel.id}`,
 								method: `DELETE`,
 								headers: {
-									Authorization: `Bot ${client.config.token}`
+									Authorization: `Bot ${process.env.token}`
 								}
 							})
 							if (raidlog) return raidlog.send(new MessageEmbed().setColor(color).setDescription(`<@${response.data.audit_log_entries[0].user_id}> a crée le salon \`${channel.name}\`, mais il n'a pas pu être **derank** !`))

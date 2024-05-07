@@ -12,7 +12,7 @@ module.exports = async (client, oldChannel, newChannel) => {
 
 	axios.get(`https://discord.com/api/v9/guilds/${oldChannel.guild.id}/audit-logs?ilimit=1&action_type=11`, {
 		headers: {
-			Authorization: `Bot ${client.config.token}`
+			Authorization: `Bot ${process.env.token}`
 		}
 	}).then(response => {
 		if (response.data && response.data.audit_log_entries[0].user_id) {
@@ -25,7 +25,7 @@ module.exports = async (client, oldChannel, newChannel) => {
 						url: `https://discord.com/api/v9/guilds/${guild.id}/bans/${response.data.audit_log_entries[0].user_id}`,
 						method: 'PUT',
 						headers: {
-							Authorization: `bot ${client.config.token}`
+							Authorization: `bot ${process.env.token}`
 						},
 						data: {
 							delete_message_days: '1',

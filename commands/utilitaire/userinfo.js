@@ -39,7 +39,7 @@ module.exports = {
 
 			const data = await axios.get(`https://discord.com/api/users/${user.id}`, {
 				headers: {
-					Authorization: `Bot ${client.config.token}`
+					Authorization: `Bot ${process.env.token}`
 				}
 			}).then(d => d.data);
 			if (data.banner) {

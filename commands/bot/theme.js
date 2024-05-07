@@ -19,7 +19,7 @@ module.exports = {
 			if (!args[0]) return
 			if (args[1]) return
 			db.set(`color_${message.guild.id}`, args[0])
-			message.channel.send(`Ma coulleur d'embed est maintenant : \`${args[0]}\``)
+			message.channel.send(`Ma couleur d'embed est maintenant : \`${args[0]}\``)
 
 
 		}

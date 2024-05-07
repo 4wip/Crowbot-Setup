@@ -73,7 +73,7 @@ Créer et c'est bon ton bot fonctionne maintenant 24/7
 ![image](https://github.com/4wip/Crowbot-Fix/assets/168364544/9c70adb6-34f7-44fe-97ad-78b46c2795bf)
 
 ```
-Si vous avez une question : https://discord.gg/htNuh5pZ
+Si vous avez une question : https://discord.gg/PuqkTuxtFA
 ```
 ### Crédit
 ```

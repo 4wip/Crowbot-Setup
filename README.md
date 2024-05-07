@@ -39,7 +39,7 @@ Comme ça vous pourrez lancer votre bot en un double click.
 
 ```
 
-### Héberger le bot 24/7 | Gratuit
+### Héberger le bot 24/7 | Gratuit (Mobile et PC)
 ```
 Rendez-vous sur https://render.com/ et créer vour un compte
 Créer un Web Service

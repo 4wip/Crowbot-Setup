@@ -65,3 +65,7 @@ Créer et c'est bon ton bot fonctionne maintenant 24/7
 ```
 Si vous avez une question : https://discord.gg/htNuh5pZ
 ```
+### Crédit
+```
+https://github.com/whoisbaby/CrowBot-Remade
+```

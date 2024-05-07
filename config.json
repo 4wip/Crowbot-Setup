@@ -1,5 +1,5 @@
 {
-    "token": "process.env.TOKEN",
+    "token": "process.env.token",
     "color": "#6495ED",
     "prefix": "+",
     "name": "4Protect",

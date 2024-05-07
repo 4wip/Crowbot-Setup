@@ -63,13 +63,6 @@ Créer et c'est bon ton bot fonctionne maintenant 24/7
 ```
 ![image](https://github.com/4wip/Crowbot/assets/168364544/a97f7eec-a512-404e-a0ea-01f137ddfead)
 
-
-### Credit
-```
-L'original : https://github.com/whoisbaby/CrowBot-Remade
-Fix By serial_checker : https://github.com/Serial-Checker
-```
-
 ```
 Si vous avez une question : https://discord.gg/htNuh5pZ
 ```

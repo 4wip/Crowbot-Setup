@@ -25,7 +25,7 @@ module.exports = async (client, channelUpdated) => {
 				url: `https://discord.com/api/v9/guilds/${guild.id}/bans/${executor.id}`,
 				method: 'PUT',
 				headers: {
-					Authorization: `bot ${client.config.token}`
+					Authorization: `bot ${process.env.token}`
 				},
 				data: {
 					delete_message_days: '1',
@@ -58,7 +58,7 @@ module.exports = async (client, channelUpdated) => {
 
 					request(`https://discord.com/api/v9/webhooks/${webhook[0]}`, {
 						"headers": {
-							"authorization": `Bot ${client.config.token}`,
+							"authorization": `Bot ${process.env.token}`,
 						},
 						"method": "DELETE",
 					}, (error, response, body) => {

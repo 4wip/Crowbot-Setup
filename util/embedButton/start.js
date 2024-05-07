@@ -28,8 +28,8 @@ const buttonInteraction = async function(button, interaction) {
 const ButtonPages = async function(interaction, message, embeds, duration, buttonStyle, rightEmoji, leftEmoji) {
 
 	if (!['red', 'green', 'blurple', "gray"].includes(buttonStyle)) throw new TypeError(`Button style incorect`);
-	if (!rightEmoji) throw new TypeError(`Emoji pour le 1er boutous n'est pas fournis`);
-	if (!leftEmoji) throw new TypeError(`Emoji pour le 2eme boutous n'est pas fournis`);
+	if (!rightEmoji) throw new TypeError(`Émoji pour le 1er boutous n'est pas fournis`);
+	if (!leftEmoji) throw new TypeError(`Émoji pour le 2eme boutous n'est pas fournis`);
 
 	const button1 = new MessageButton()
 		.setLabel(rightEmoji)

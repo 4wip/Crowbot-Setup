@@ -10,13 +10,13 @@ const ms = require("ms")
 
 module.exports = {
 	name: 'giveaway',
-	aliases: ["gvw"],
+	aliases: ["gw"],
 	run: async (client, message, args, prefix, color) => {
 
 		let perm = ""
 		message.member.roles.cache.forEach(role => {
 			if (db.get(`ownerp_${message.guild.id}_${role.id}`)) perm = true
-			if (db.get(`gvwp_${message.guild.id}_${role.id}`)) perm = true
+			if (db.get(`gwp_${message.guild.id}_${role.id}`)) perm = true
 		})
 		if (client.config.owner.includes(message.author.id) || db.get(`ownermd_${client.user.id}_${message.author.id}`) === true || perm) {
 
@@ -152,14 +152,14 @@ module.exports = {
 					})
 					const bt = new MessageButton()
 						.setStyle("gray")
-						.setID("gvw1" + message.id)
+						.setID("gw1" + message.id)
 						.setEmoji("✅")
 						.setLabel("Valider")
 					const bt2 = new MessageButton()
 						.setStyle("gray")
-						.setID("gvw2" + message.id)
+						.setID("gw2" + message.id)
 						.setEmoji("❌")
-						.setLabel("Re formuler votre choix")
+						.setLabel("Reformuler votre choix")
 					msg.edit({
 						embed: embed,
 						components: [
@@ -265,14 +265,14 @@ module.exports = {
 				})
 				const bt = new MessageButton()
 					.setStyle("gray")
-					.setID("gvw1" + message.id)
+					.setID("gw1" + message.id)
 					.setEmoji("✅")
 					.setLabel("Valider")
 				const bt2 = new MessageButton()
 					.setStyle("gray")
-					.setID("gvw2" + message.id)
+					.setID("gw2" + message.id)
 					.setEmoji("❌")
-					.setLabel("Re formuler votre choix")
+					.setLabel("Reformuler votre choix")
 				message.channel.send({
 					embed: embed,
 					components: [
@@ -313,7 +313,7 @@ module.exports = {
 					client.on('clickButton', async (button) => {
 						if (message.author !== button.clicker.user) return;
 
-						if (button.id === "gvw1" + message.id) {
+						if (button.id === "gw1" + message.id) {
 							button.reply.defer(true)
 							var channel = message.guild.channels.cache.get(db.get(`channel${message.guild.id}`)) || message.guild.channels.cache.get(message.channel.id)
 							if (!channel) return message.channel.send(`Aucun salon trouvé pour \`le giveaway\``)
@@ -385,7 +385,7 @@ Crée par: ${message.author}`)
 								channel.send(`Félicitation à ${winner} qui gagne ${db.get(`gain${message.guild.id}`)}`)
 							}, db.get(`dure${message.guild.id}`));
 						}
-						if (button.id === "gvw2" + message.id) {
+						if (button.id === "gw2" + message.id) {
 							button.reply.defer(true)
 							updateembed(m)
 						}

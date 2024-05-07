@@ -66,7 +66,7 @@ module.exports = {
 				.setStyle("gray")
 				.setID(message.id + "soutien")
 				.setEmoji("❌")
-				.setLabel("Re formuler votre choix")
+				.setLabel("Reformuler votre choix")
 			msg.edit({
 				embed: embed,
 				components: [
@@ -140,7 +140,7 @@ module.exports = {
 				.setStyle("gray")
 				.setID(message.id + "soutien")
 				.setEmoji("❌")
-				.setLabel("Re formuler votre choix")
+				.setLabel("Reformuler votre choix")
 			message.channel.send({
 				embed: embed,
 				components: [

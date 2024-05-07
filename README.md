@@ -6,7 +6,7 @@ Le NSFW retiré du bot.
 Token du bot dans un .env
 Méthode pour l'héberger gratuitement
 Ajout du keep_alive.js.
-Soon
+Et encore...
 ```
 ### Setup
 ```

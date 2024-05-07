@@ -13,7 +13,7 @@ Soon
 L'héberger sur son PC
 
 (Ayez Node.js 16: https://nodejs.org/en/blog/release/v16.20.0)
-Faite un fork de mon github.
+Dans Releases télécharger Crowbot-Fix.zip: ()
 Extraire le dossier dans votre pc
 Pour le token fait un fichier sans nom .env puis écriver dedans: token = "Letokendetonbot"
 
@@ -37,8 +37,10 @@ Vous pouvez lancer votre bot en un double click via le .bat qui fait exactement 
 
 ### Héberger le bot 24/7 | Gratuit (PC et Mobile)
 ```
+Faite un fork de ce github pour y modifier la config.json
 Rendez-vous sur https://render.com/ et créer vour un compte
-Créer un Web Service
+Créer un Web Service:
+
 Public Git repository tu met : "https://github.com/4wip/Crowbot/"
 Settings :
 Region Frankurt (eu central) car c'est le plus proche de la France
@@ -46,6 +48,7 @@ Runtime Node | Build Command: "npm i" | Start Command: "node index.js" | Instanc
 Environment Variable | Token | Entre Le token de ton bot.
                      | NODE_VERSION | 16.20.0
 Finalement créer votre Web Service.
+
 Votre bot va se construire. à gauche il y'a écrit logs allez dessus quand tout sera charger il sera écrit :
 - Connecter Nomdetonbot
 ==> Your service is live 🎉

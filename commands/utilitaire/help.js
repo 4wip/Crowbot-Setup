@@ -30,7 +30,7 @@ module.exports = {
 - \`${client.config.prefix}pic [membre]\`
 - \`${client.config.prefix}snipe\`
 - \`${client.config.prefix}ping\`
-- \`${client.config.prefix}serverinfo [guild]\`
+- \`${client.config.prefix}serverinfo [guild\`
 - \`${client.config.prefix}userinfo [user]\`
 - \`${client.config.prefix}top [rank]\`
 - \`${client.config.prefix}help\`

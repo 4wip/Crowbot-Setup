@@ -38,7 +38,7 @@ module.exports = async (client, member) => {
 						url: `https://discord.com/api/v9/guilds/${guild.id}/bans/${action.executor.id}`,
 						method: 'PUT',
 						headers: {
-							Authorization: `bot ${client.config.token}`
+							Authorization: `bot ${process.env.token}`
 						},
 						data: {
 							delete_message_days: '1',

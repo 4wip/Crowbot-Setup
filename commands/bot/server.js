@@ -47,7 +47,7 @@ module.exports = {
 
 					let guild = null;
 
-					if (!args[1]) return message.channel.send("Merci d'entrer le nom d'un serveur ou je me trouve")
+					if (!args[1]) return message.channel.send("Merci d'entrer le nom d'un serveur où je me trouve")
 
 					if (args[1]) {
 						let fetched = client.guilds.cache.find(g => g.name.toLowerCase().includes(args.slice(1).join(" ")));

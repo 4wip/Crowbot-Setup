@@ -67,7 +67,7 @@ module.exports = {
 					.setStyle("gray")
 					.setID(message.id + "leave")
 					.setEmoji("❌")
-					.setLabel("Re formuler votre choix")
+					.setLabel("Reformuler votre choix")
 				let interactiveButtons = new MessageMenu()
 					.setID(message.id + 'MenuSelection')
 					.setMaxValues(1)
@@ -157,7 +157,7 @@ module.exports = {
 					.setStyle("gray")
 					.setID(message.id + "leave")
 					.setEmoji("❌")
-					.setLabel("Re formuler votre choix")
+					.setLabel("Reformuler votre choix")
 				let interactiveButtons = new MessageMenu()
 					.setID(message.id + 'MenuSelection')
 					.setMaxValues(1)
@@ -484,7 +484,7 @@ Quel est **le DM salon d'aurevoir** ?`).then(mp => {
 				.setStyle("gray")
 				.setID("embedmsg3" + message.id)
 				.setEmoji("❌")
-				.setLabel("Re formuler votre choix")
+				.setLabel("Reformuler votre choix")
 
 			message.channel.send(`\`\`\`
 --- Informations sur l'user : ---

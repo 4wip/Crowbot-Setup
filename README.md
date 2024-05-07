@@ -13,10 +13,9 @@ Soon
 L'héberger sur son PC
 
 (Ayez Node.js 16: https://nodejs.org/en/blog/release/v16.20.0)
-
-Faite un fork de mon github pour y modifier le config.json.
-
-Pour le token fait un fichier sans nom .env puis écriver dedans :TOKEN = "Letokendetonbot"
+Faite un fork de mon github.
+Extraire le dossier dans votre pc
+Pour le token fait un fichier sans nom .env puis écriver dedans: token = "Letokendetonbot"
 
 Allez dans config.json:
 {
@@ -29,17 +28,14 @@ Allez dans config.json:
     "owner": ["1133246357960921158"] // ID du owner du bot
 }
 
+Le lancement:
 Ouvrez un terminal pour y écrire : npm i
 Puis écrivez : node index.js | et votre bot se lancera
-
-Si vous hébergez sur votre pc et que vous êtes sous window à la place de mettre tout le temps node.js dans le terminal. Fait un Run.bat et met dedans :
-@echo off
-node index.js
-Comme ça vous pourrez lancer votre bot en un double click.
-
+Ou
+Vous pouvez lancer votre bot en un double click via le .bat qui fait exactement la meme opération.
 ```
 
-### Héberger le bot 24/7 | Gratuit (Mobile et PC)
+### Héberger le bot 24/7 | Gratuit
 ```
 Rendez-vous sur https://render.com/ et créer vour un compte
 Créer un Web Service

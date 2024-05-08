@@ -55,7 +55,7 @@ Public Git repository tu met ton fork : "https://github.com/tonnom/Crowbot/"
 Settings :
 Region Frankurt (eu central) car c'est le plus proche de la France
 Runtime Node | Build Command: "npm i" | Start Command: "node index.js" | Instance type: Free ou autre.
-Environment Variable | token | Entre Le token de ton bot (Les majuscule sont pris en compte).
+Environment Variable | token | Entre Le token de ton bot.
                      | NODE_VERSION | 16.20.0
 Finalement créer votre Web Service.
 

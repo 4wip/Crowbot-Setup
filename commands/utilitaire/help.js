@@ -27,7 +27,7 @@ module.exports = {
 - \`${client.config.prefix}banner [membre]\`
 - \`${client.config.prefix}invite [membre]\`
 - \`${client.config.prefix}support\`
-- \`${client.config.prefix}pic [membre]\`
+- \`${client.config.prefix}pic [membre]\`
 - \`${client.config.prefix}snipe\`
 - \`${client.config.prefix}ping\`
 - \`${client.config.prefix}serverinfo [guild\`
@@ -152,7 +152,8 @@ module.exports = {
 			util.addField(`\`${prefix}help\``, "Permet de voir la liste des commandes du bot")
 				if (1 <= perm) util.addField(`\`${prefix}help all\``, "Permet de voir les commandes du bot via les permissions")
 			util.addField(`\`${prefix}invite [membre]\``, "Permet de voir le nombre d'invtations que possède un utilisateur")
-			util.addField(`\`${prefix}pic [membre]\``, "Permet de voir la photo de profil d'un utilisateur")
+			util.addField(`\`${prefix}pic [membre]\``, "Permet de voir la photo de profil d'un utilisateur")
+
 			util.addField(`\`${prefix}ping\``, "Permet de voir la latence du bot et du websocket en ms")
 				if (2 <= perm) util.addField(`\`${prefix}roleinfo <rôle>\``, "Permet de d'avoir des informations sur un rôle")
 			util.addField(`\`${prefix}serverinfo [guild]\``, "Permet de d'avoir des informations sur un serveur où ce trouve le bot")

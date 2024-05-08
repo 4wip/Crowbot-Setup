@@ -1,12 +1,6 @@
-Le bot crowbot...
-### Mini modifications
 ```
-Fix mute | Le bot ajouter le role muet à chaque personnes qui rejoignaient le serveur.
+Le bot ne mute plus les personnes qui rejoigne un serveur.
 Le NSFW retiré du bot.
-Token du bot dans un .env
-Méthode pour l'héberger gratuitement
-Ajout du keep_alive.js.
-Et encore...
 ```
 ### Setup
 ```

@@ -51,7 +51,7 @@ Une autre option est de double-cliquer sur le fichier .bat pour lancer le bot. C
 ```
 
 
-2.2 Héberger le bot 24/7 | Gratuit (PC et Mobile)
+2.2 Héberger 24/7 sur Render | Gratuit (PC et Mobile)
 ```
 Faites un fork du dépôt GitHub suivant pour modifier le fichier config.json : https://github.com/4wip/Crowbot-Fix/fork
 Rendez-vous sur le site Render et créez un compte.

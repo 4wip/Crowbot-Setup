@@ -1,5 +1,5 @@
 Le bot crowbot...
-## Mini modifications
+### Mini modifications
 ```
 Fix mute | Le bot ajouter le role muet à chaque personnes qui rejoignaient le serveur.
 Le NSFW retiré du bot.

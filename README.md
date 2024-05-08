@@ -10,70 +10,78 @@ Et encore...
 ```
 ### Setup
 ```
-Créer un bot
-Allez sur : https://discord.com/developers/applications
-New application
-Dans l'onglet bot ou tu cochera les 3 Privileged Gateway Intents
-Reset et copie le token
-Va dans Oauth2 > OAuth2 URL Generator > Coche bot et administrator
-Copie et colle dans un autre onglet le Generated Url
-Invite le dans ton serveur.
+1. Créez un bot
+･ Rendez-vous sur le site : https://discord.com/developers/applications
+･ En haut à droite, cliquez sur "Nouvelle Application".
+･ Dans l'onglet "Bot", cochez les 3 "Privileged Gateway Intents" (Presence Intent, Server Intent et Message Content Intent).
+･ Réinitialisez et copiez le token de votre bot.
+･ Allez dans l'onglet "Oauth2", puis dans "OAuth2 URL Generator", cochez "bot" et "administrator".
+･ Copiez et collez l'URL générée dans un autre onglet et invitez le bot dans votre serveur.
+```
 
 
-L'héberger sur son PC
+2.1 L'héberger sur son PC
+```
+Prérequis :
+Assurez-vous d'avoir Node.js 16.20.0 : https://nodejs.org/en/blog/release/v16.20.0
+Téléchargez Crowbot-Fix.zip depuis les releases (https://github.com/4wip/Crowbot-Fix/releases/)
+Extrayez le dossier sur votre PC
+Pour le token, créez un fichier sans nom .env et écrivez dedans : token = "Letokendetonbot"
 
-(Ayez Node.js 16: https://nodejs.org/en/blog/release/v16.20.0)
-Dans télécharge Crowbot-Fix.zip qui est dans les releases (https://github.com/4wip/Crowbot-Fix/releases/)
-Extraire le dossier dans votre pc
-Pour le token fait un fichier sans nom .env puis écriver dedans: token = "Letokendetonbot"
-
-Allez dans config.json:
+Allez dans config.json :
 {
     "color": "#2B2D31", //Couleur HEX
-    "prefix": "+", //Préfix Bot, exemple pour faire +help
+    "prefix": "+", //Préfixe du bot, par exemple pour utiliser +help
     "name": "CrowBot Remade", // Footer Embed
     "defaultjoinmessage": "{user} vient de rejoindre. Il a été invité par **{inviter:name}** qui a désormais **{invite} invitations** !", // Modifiable
-    "defaultleavemessage": "{user} vient de quitter. Il avais été invité par **{inviter:name}** qui a désormais **{invite} invitations** ", // Modifiable
-    "defaultLevelmessage": "**{user}** vient de passer au level **{level}** bravo à lui !", // Modifiable
-    "owner": ["1133246357960921158"] // ID du owner du bot
+    "defaultleavemessage": "{user} vient de quitter. Il avait été invité par **{inviter:name}** qui a désormais **{invite} invitations** ", // Modifiable
+    "defaultLevelmessage": "**{user}** vient de passer au niveau **{level}**. Bravo à lui !", // Modifiable
+        "owner": [  // ID des propriétaires
+        "1208337813339373569", 
+        "",
+        ""
+    ]
 }
 
-Le lancement:
-Ouvrez un terminal pour y écrire : npm i
-Puis écrivez : node index.js | et votre bot se lancera
-Ou
-Vous pouvez lancer votre bot en un double click via le .bat qui fait exactement la meme opération.
+Lancement du bot
+Ouvrez un terminal.
+Tapez "npm i" dans le terminal.
+Ensuite, pour lancer le bot, tapez "node index.js" dans le terminal.
+Une autre option est de double-cliquer sur le fichier .bat pour lancer le bot. Ce fichier effectue la même opération que la commande précédente.
 ```
 
-### Héberger le bot 24/7 | Gratuit (PC et Mobile)
+
+2.2 Héberger le bot 24/7 | Gratuit (PC et Mobile)
 ```
-Faite un fork de ce github pour y modifier la config.json
-Rendez-vous sur https://render.com/ et créer vour un compte
-Créer un Web Service:
+Faites un fork du dépôt GitHub suivant pour modifier le fichier config.json : https://github.com/4wip/Crowbot-Fix/fork
+Rendez-vous sur le site Render et créez un compte.
+Créez un service web sur Render :
+Utilisez le fork que vous venez de faire.
+Paramètres :
+Région : Frankfurt (EU Central).
+Runtime : Node
+Commande de construction : "npm i"
+Commande de démarrage : "node index.js"
+Type d'instance : Gratuit ou autre.
 
-Public Git repository tu met : "https://github.com/4wip/Crowbot/"
-Settings :
-Region Frankurt (eu central) car c'est le plus proche de la France
-Runtime Node | Build Command: "npm i" | Start Command: "node index.js" | Instance type: Free ou autre.
-Environment Variable | Token | Entre Le token de ton bot.
-                     | NODE_VERSION | 16.20.0
-Finalement créer votre Web Service.
+Variables d'environnement :
+token : Entrez le token de votre bot.
+NODE_VERSION : 16.20.0
 
-Votre bot va se construire. à gauche il y'a écrit logs allez dessus quand tout sera charger il sera écrit :
-- Connecter Nomdetonbot
-==> Your service is live 🎉
-Votre bot est en ligne.
+Enfin, créez votre service web.
+Votre bot va se construire. Allez dans l'onglet "logs" sur Render pour suivre le processus. Une fois que tout est chargé, vous verrez l'indication suivante : "Connecté à Nomdetonbot". Cela signifie que votre bot est en ligne.
 
-Pour le maintenir 24/7
-Allez sur le site https://cron-job.org/en/ et créer toi un compte
-Puis t'arrivera dans le dashboard ou t'ira dans l'onglet Cronjobs
-Ensuite Créer un Cronjobs : Titre: Ce que tu veux | Url celle de ton render (Voir l'image) | Calendrier d'éxecution | Chaque 1 minutes.
-Créer et c'est bon ton bot fonctionne maintenant 24/7
+Pour maintenir votre bot en ligne 24/7, rendez-vous sur le site cron-job.org et créez un compte.
+Dans le tableau de bord, allez dans l'onglet "Cronjobs" et créez un nouveau Cronjob :
+Nom : Choisissez le nom que vous souhaitez.
+URL : Utilisez l'URL de votre service web sur Render (voir l'image).
+Calendrier d'exécution : Chaque minute.
+Créez le Cronjob et voilà, votre bot fonctionne maintenant 24/7.
 ```
 ![image](https://github.com/4wip/Crowbot-Fix/assets/168364544/9c70adb6-34f7-44fe-97ad-78b46c2795bf)
 
 ```
-Si vous avez une question : https://discord.gg/PuqkTuxtFA
+Si vous avez une question ou besoin d'aide : https://discord.gg/PuqkTuxtFA
 ```
 ### Crédit
 ```

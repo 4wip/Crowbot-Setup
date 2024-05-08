@@ -27,7 +27,7 @@ module.exports = {
 - \`${client.config.prefix}banner [membre]\`
 - \`${client.config.prefix}invite [membre]\`
 - \`${client.config.prefix}support\`
-- \`${client.config.prefix}pic [membre]\`
+- \`${client.config.prefix}pic [membre]\`
 - \`${client.config.prefix}snipe\`
 - \`${client.config.prefix}ping\`
 - \`${client.config.prefix}serverinfo [guild\`
@@ -143,7 +143,7 @@ module.exports = {
 			util.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			util.setTitle("Utilitaire")
 			util.setTimestamp()
-			util.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
+			util.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
 				if (2 <= perm) util.addField(`\`${prefix}alladmin\``, "Permet de voir tout les administrateurs présents sur le serveur")
 				if (2 <= perm) util.addField(`\`${prefix}allbot\``, "Permet de voir tout les bots présents sur le serveur")
 				if (2 <= perm) util.addField(`\`${prefix}allbotadmin\``, "Permet de voir tout les bots administrateurs présents sur le serveur")
@@ -152,7 +152,8 @@ module.exports = {
 			util.addField(`\`${prefix}help\``, "Permet de voir la liste des commandes du bot")
 				if (1 <= perm) util.addField(`\`${prefix}help all\``, "Permet de voir les commandes du bot via les permissions")
 			util.addField(`\`${prefix}invite [membre]\``, "Permet de voir le nombre d'invtations que possède un utilisateur")
-			util.addField(`\`${prefix}pic [membre]\``, "Permet de voir la photo de profil d'un utilisateur")
+			util.addField(`\`${prefix}pic [membre]\``, "Permet de voir la photo de profil d'un utilisateur")
+
 			util.addField(`\`${prefix}ping\``, "Permet de voir la latence du bot et du websocket en ms")
 				if (2 <= perm) util.addField(`\`${prefix}roleinfo <rôle>\``, "Permet de d'avoir des informations sur un rôle")
 			util.addField(`\`${prefix}serverinfo [guild]\``, "Permet de d'avoir des informations sur un serveur où ce trouve le bot")
@@ -168,7 +169,7 @@ module.exports = {
 			mods.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			mods.setTitle("Modération")
 			mods.setTimestamp()
-			mods.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
+			mods.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
 			if (4 <= perm) mods.addField(`\`${prefix}addrole <membre> <rôle>\` (*Seulement les rôles sans permissions dangereuse*)`, "Permet de donner un rôle à un membre sur le serveur")
 			if (2 <= perm) mods.addField(`\`${prefix}ban <membre> [raison]\``, "Permet de bannir un membre du serveur")
 			if (2 <= perm) mods.addField(`\`${prefix}banlist\``, "Permet de voir tout les membres bannis sur le serveur")
@@ -196,7 +197,7 @@ module.exports = {
 			gestion.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			gestion.setTitle("Serveur Gestion")
 			gestion.setTimestamp()
-			gestion.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
+			gestion.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
 			if (5 <= perm) gestion.addField(`\`${prefix}antiraid\``, "Permet de gérer les modules d'antiraid sur le serveur")
 			if (4 <= perm) gestion.addField(`\`${prefix}counter\``, "Permet de gérer les compteurs personnalisés sur le serveur")
 			if (4 <= perm) gestion.addField(`\`${prefix}embed\``, "Permet de crée un embed personalisé")
@@ -223,7 +224,7 @@ module.exports = {
 			bot.setFooter(`Prefix : ${prefix} • ${client.config.name}`)
 			bot.setTitle("Bot")
 			bot.setTimestamp()
-			bot.setDescription("*Les paramètres entre **`<...>`** sont obligatoire, alors que les paramètres entre **`[...]`** eux sont facultatifs*")
+			bot.setDescription("*Les paramètres entre **`<>`** sont obligatoire, alors que les paramètres entre **`[]`** eux sont facultatifs*")
 			if (5 <= perm) bot.addField(`\`${prefix}backup <emoji> <clear/create/list/load/remove>> <2/3/4: code>\``, "Permet de gérer les backup sur le bot")
 			if (4 <= perm) bot.addField(`\`${prefix}blacklist <add/clear/list/remove> <add/remove: membre>\``, "Permet de gérer les utilisateurs blacklist")
 			if (4 <= perm) bot.addField(`\`${prefix}blacklistrank <add/clear/list/remove> <add/remove: membre>\``, "Permet de gérer les utilisateurs blacklistrank")

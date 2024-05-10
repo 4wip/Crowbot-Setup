@@ -52,7 +52,7 @@ Rendez-vous sur le site Render et créez un compte.
 Créez un service web sur Render :
 Utilisez le fork que vous venez de faire.
 Paramètres :
-Région : Frankfurt (EU Central).
+Région : Ohio (US East).
 Runtime : Node
 Commande de construction : "npm i"
 Commande de démarrage : "node index.js"

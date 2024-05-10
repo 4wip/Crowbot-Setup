@@ -75,7 +75,7 @@ Créez le Cronjob et voilà, votre bot fonctionne maintenant 24/7.
 ![image](https://github.com/4wip/Crowbot-Fix/assets/168364544/9c70adb6-34f7-44fe-97ad-78b46c2795bf)
 
 ```
-Si vous avez une question ou besoin d'aide : https://discord.gg/PuqkTuxtFA
+Si vous avez une question ou besoin d'aide : https://discord.gg/QnbQsvmF
 ```
 ### Crédit
 ```

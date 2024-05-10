@@ -20,7 +20,7 @@ Prérequis :
 Assurez-vous d'avoir Node.js 16.20.0 : https://nodejs.org/en/blog/release/v16.20.0
 Téléchargez Crowbot-Fix.zip depuis les releases (https://github.com/4wip/Crowbot-Fix/releases/)
 Extrayez le dossier sur votre PC
-Pour le token, créez un fichier sans nom .env et écrivez dedans : token = "Letokendetonbot"
+Pour le token, vous serez obliger d'aller dans util/login.js et client.login("Mettre votre token ici.");
 
 Allez dans config.json :
 {

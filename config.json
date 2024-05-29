@@ -1,13 +1,13 @@
 {
-    "color": "#6495ED",
+    "color": "#1200F0",
     "prefix": "+",
-    "name": "4Protect",
+    "name": "{PROTECTKAI+}",
     "defaultjoinmessage": "{user} vient de rejoindre. Il a été invité par **{inviter:name}** qui a désormais **{invite} invitations** !",
     "defaultleavemessage": "{user} vient de quitter. Il avais été invité par **{inviter:name}** qui a désormais **{invite} invitations** ",
     "defaultLevelmessage": "**{user}** vient de passer au level **{level}** bravo à lui !",
     "owner": [
-        "1208337813339373569", 
-        "",
-        ""
+        "1132075595782697000", 
+        "1236962745354682408",
+        "1145754747995955200"
     ]
 }

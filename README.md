@@ -2,7 +2,7 @@ N'hésitez pas à mettre en star ce github.
 ```
 Le bot ne mute plus les personnes qui rejoigne un serveur.
 Le NSFW retiré du bot.
-Etc...
+Prend pas la release prend le code source
 ```
 ### Setup
 ```

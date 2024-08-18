@@ -1,4 +1,4 @@
-### Créer un bot
+Créer un bot
 ```
 ･ Rendez-vous sur le site : https://discord.com/developers/applications
 ･ Cliquez sur "Nouvelle Application"
@@ -40,6 +40,7 @@ Tapez "npm i" (à faire qu'une fois)
 Pour lancer le bot à chaque fois, tapez "node index.js"
 ```
 
+[+]
 
 Héberger 24/7 sur Render | Gratuit (PC et Mobile)
 ```

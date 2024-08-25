@@ -1,3 +1,6 @@
+Discord: https://dsc.gg/4wip
+
+
 Créer un bot
 ```
 ･ Rendez-vous sur le site : https://discord.com/developers/applications

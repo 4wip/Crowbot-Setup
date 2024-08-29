@@ -96,10 +96,10 @@ module.exports = {
                         .setThumbnail(guild.iconURL({dynamic: true}))
                         .setDescription(` 
 - **${message.guild.members.cache.filter(m => m.voice.channel).size}** ${message.guild.members.cache.filter(m => m.voice.channel).size  > 1 ? '*Personnes*' : '*Personne*'} *en vocal.* <:4_vocal:1217007411068669963>
-- **${mutedMic}** ${mutedMic > 1 ? '*Personnes*' : '*Personne*'} *sont mute micro.* <:4_mutemicro:1217038600039039026>
-- **${mutedCount}** ${mutedCount > 1 ? '*Personnes*' : '*Personne*'} *sont mute casque.* <:4_mutecasque:1217038590744330272>
-- **${streamingCount}** ${streamingCount > 1 ? '*Personnes*' : '*Personne*'} *sont en stream.* <:4_streaming:1217038609518035034>
-- **${cameraCount}** ${cameraCount > 1 ? '*Personnes*' : '*Personne*'} *sont en caméra.* <:4_camera:1217038618603032596> 
+- **${mutedMic}** ${mutedMic > 1 ? '*Personnes*' : '*Personne*'} *sont mute micro.* <:4nomic:1278656237667352638>
+- **${mutedCount}** ${mutedCount > 1 ? '*Personnes*' : '*Personne*'} *sont mute casque.* <:4smute:1278656236304203902>
+- **${streamingCount}** ${streamingCount > 1 ? '*Personnes*' : '*Personne*'} *sont en stream.* <:4stream:1278656234991390803>
+- **${cameraCount}** ${cameraCount > 1 ? '*Personnes*' : '*Personne*'} *sont en caméra.* 📷
 `)
                         .setColor(color)
                         .setTimestamp()

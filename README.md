@@ -16,7 +16,7 @@ L'héberger sur son PC
 ```
 Prérequis:
 Assurez-vous d'avoir Node.js 16.20.0: https://nodejs.org/en/blog/release/v16.20.0
-Avoir le dossier avec le bot: https://4wip/Crowbot-Setup/archive/refs/heads/main.zip
+Avoir le dossier avec le bot: https://github.com/4wip/Crowbot-Setup/archive/refs/heads/main.zip
 
 Configuration:
 Pour mettre le token, aller dans le dossier util et ouvrez login.js

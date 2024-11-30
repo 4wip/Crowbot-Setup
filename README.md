@@ -51,7 +51,7 @@ Faites un fork du gitHub : https://github.com/4wip/Crowbot-Setup/fork
 Sur le site Render, créez un compte (c'est le bouton sign in) : https://render.com/
 
 Créez un service web:
-Lien: le fork que tu vien de faire
+Lien: le fork que tu viens de faire
 
 Paramètres :
 Région : Virginia

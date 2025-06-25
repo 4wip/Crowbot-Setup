@@ -20,7 +20,7 @@ Avoir le dossier avec le bot: https://github.com/4wip/Crowbot-Setup/archive/refs
 
 Configuration:
 Pour mettre le token, aller dans le dossier util et ouvrez login.js
-Vous voyez client.login("Mettre votre token ici.");  remplacer le Mettre votre token ici. par le token de votre bot
+Vous voyez client.login("Mettre votre token ici.");  remplacer votre token (exemple: client.login("MTMyNDMMMM");  )
 
 Allez dans config.json :
 {
@@ -32,7 +32,7 @@ Allez dans config.json :
     "defaultLevelmessage": "**{user}** vient de passer au niveau **{level}**. Bravo à lui !", // Modifiable
         "owner": [  // ID des owners du bot
         "1208337813339373569", 
-        "",
+        "1208337813339373569",
         ""
     ]
 }
@@ -42,43 +42,6 @@ Ouvrez un terminal
 Tapez "npm i" (à faire qu'une fois)
 Pour lancer le bot à chaque fois, tapez "node index.js"
 ```
-
-[+]
-
-Héberger 24/7 sur Render | Gratuit (PC et Mobile)
-```
-Faites un fork du gitHub : https://github.com/4wip/Crowbot-Setup/fork
-Sur le site Render, créez un compte (c'est le bouton sign in) : https://render.com/
-
-Créez un service web:
-Lien: le fork que tu viens de faire
-
-Paramètres :
-Région : Virginia
-Runtime : Node
-Commande de construction : "npm i"
-Commande de démarrage : "node index.js"
-Type d'instance : Gratuit ou autre
-
-Variables d'environnement :
-token : meeae898787 (tu met le token de ton bot)
-NODE_VERSION : 16.20.0 (Si tu le met pas le bot va pas marcher)
-
-Enfin, créez votre service web
-Allez dans l'onglet "logs" sur Render pour voir si l'indication suivante : "Connecté à Nomdetonbot". Cela signifie que votre bot est en ligne et marche (sa peut prendre du temps)
-```
-Maintenir le bot en ligne 24/7
-```
-Sur le site cron-job.org, créez un compte (bouton sign up)
-Dans le tableau de bord (dashboard en anglais), allez dans l'onglet "Cronjobs" et créez un nouveau Cronjob:
-
-Nom : Le nom que vous souhaitez. (sa a aucun impacte sur le bot)
-URL : Utilisez l'URL de votre service web sur Render (voir l'image).
-Calendrier d'exécution : Chaque minute.
-Créez le Cronjob.
-votre bot fonctionne maintenant 24/7.
-```
-![image](https://github.com/4wip/Crowbot-Fix/assets/168364544/9c70adb6-34f7-44fe-97ad-78b46c2795bf)
 
 ### Crédit
 ```

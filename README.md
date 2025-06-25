@@ -38,7 +38,7 @@ Allez dans config.json :
 }
 
 Lancement du bot:
-Ouvrez un terminal
+Ouvrez le cmd dans le dossier
 Tapez "npm i" (à faire qu'une fois)
 Pour lancer le bot à chaque fois, tapez "node index.js"
 ```
